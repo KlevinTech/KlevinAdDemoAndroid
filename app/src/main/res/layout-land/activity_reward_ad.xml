@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.tencent.klevinDemo.log.LogView
+        android:id="@+id/logView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_show_reward_ad"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <com.tencent.klevinDemo.view.AdCommonView
+        android:id="@+id/adCommonView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_vert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_vert4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <EditText
+        android:id="@+id/edt_reward_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="@string/reward_time_default"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintStart_toEndOf="@+id/txt_reward_time2"
+        app:layout_constraintTop_toBottomOf="@+id/adCommonView" />
+
+    <TextView
+        android:id="@+id/txt_reward_time2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/input_reward_time"
+        app:layout_constraintBottom_toBottomOf="@+id/edt_reward_time"
+        app:layout_constraintStart_toStartOf="@+id/guideline_vert"
+        app:layout_constraintTop_toTopOf="@+id/edt_reward_time" />
+
+    <EditText
+        android:id="@+id/edt_reward_type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/reward_type_default"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/edt_reward_time"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_vert4"
+        app:layout_constraintStart_toEndOf="@+id/txt_reward_type2"
+        app:layout_constraintTop_toTopOf="@+id/edt_reward_time" />
+
+    <TextView
+        android:id="@+id/txt_reward_type2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/input_reward_type"
+        app:layout_constraintBottom_toBottomOf="@+id/edt_reward_type"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="@+id/edt_reward_type" />
+
+    <CheckBox
+        android:id="@+id/cb_reward_auto_mute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:checked="true"
+        android:minHeight="48dp"
+        android:text="@string/autoMute"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintStart_toStartOf="@+id/guideline_vert"
+        app:layout_constraintTop_toBottomOf="@+id/edt_reward_time" />
+
+    <CheckBox
+        android:id="@+id/cb_reward_play_online"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:minHeight="48dp"
+        android:text="@string/play_online"
+        app:layout_constraintBottom_toBottomOf="@+id/cb_reward_auto_mute"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_vert4"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="@+id/cb_reward_auto_mute" />
+
+    <Button
+        android:id="@+id/btn_load_reward_ad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="@string/load_encourage_ad"
+        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintStart_toStartOf="@+id/guideline_vert"
+        app:layout_constraintTop_toBottomOf="@+id/cb_reward_auto_mute" />
+
+    <Button
+        android:id="@+id/btn_show_reward_ad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="@string/show_ad_reward"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_load_reward_ad"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_vert4"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="@+id/btn_load_reward_ad" />
+</android.support.constraint.ConstraintLayout>

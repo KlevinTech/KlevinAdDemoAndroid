@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp">
+    <LinearLayout
+        android:id="@+id/ll_ad_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/layout_ad_image_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@+id/layout_ad_image_custom_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_custom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/item_image_view_custom"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/iv_ad_close_icon"
+                android:layout_alignParentRight="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/native_ad_close_icon"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <ImageView
+                android:id="@+id/iv_ad_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/tv_ad_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:layout_alignTop="@id/iv_ad_icon"
+                android:layout_marginLeft="75dp"
+                android:text="@string/item_video_view_title"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_ad_desc"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lineSpacingMultiplier="1"
+                android:layout_alignBottom="@+id/iv_ad_icon"
+                android:maxLines="2"
+                android:layout_marginLeft="75dp"
+                android:text="@string/item_video_view_desc"
+                android:textColor="@color/gray"
+                android:textSize="10sp" />
+
+            <com.tencent.klevinDemo.view.LinearProgressBar
+                android:id="@+id/btn_download"
+                android:layout_width="86dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="立即下载"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"/>
+
+
+            <ImageView
+                android:id="@+id/img_logo"
+                android:layout_width="33dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="6dp"
+                android:layout_marginRight="5dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

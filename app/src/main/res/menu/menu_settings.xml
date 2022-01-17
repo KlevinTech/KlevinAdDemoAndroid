@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_sw_test_env"
+        android:checkable="true"
+        android:checked="false"
+        android:enabled="true"
+        android:title="@string/env_test"
+        app:actionLayout="@layout/switch_item"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_btn_appId"
+        android:title="@string/appId" />
+    <item
+        android:id="@+id/menu_btn_network"
+        android:title="@string/network_type" />
+    <item
+        android:id="@+id/menu_btn_privacy"
+        android:title="@string/privacy_config" />
+
+    <item
+        android:id="@+id/menu_btn_ad_test"
+        android:checkable="false"
+        android:title="@string/klevinAdTest"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_sw_log"
+        android:checkable="true"
+        android:checked="false"
+        android:enabled="true"
+        android:title="@string/log"
+        app:actionLayout="@layout/switch_item"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_btn_clear_cache"
+        android:checkable="false"
+        android:title="@string/clear_cache"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_txt_version"
+        android:checkable="false"
+        android:title="" />
+
+</menu>

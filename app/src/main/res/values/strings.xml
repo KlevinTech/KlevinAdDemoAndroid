@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">游可赢示例</string>
+    <string name="version">版本：</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="modify_successful">修改成功</string>
+    <string name="sp_name_setting">setting</string>
+    <string name="sp_name_ad_config">adConfig</string>
+    <string name="intent_button_name">buttonName</string>
+    <string name="intent_pod_id">posId</string>
+
+    <string name="env_test">测试环境</string>
+    <string name="appId">appId</string>
+    <string name="adCount_default">1</string>
+    <string name="input_appId">请输入AppId:</string>
+    <string name="input_posId">PosID: </string>
+    <string name="input_ad_count">AdCount: </string>
+
+    <string name="network_type">允许下载的网络: </string>
+    <string-array name="network_type">
+        <item>移动与Wi-Fi</item>
+        <item>Wi-Fi</item>
+        <item>移动</item>
+        <item>无</item>
+    </string-array>
+    <string name="input_network_type">请选择允许直接下载的网络:\n(未选中的网络下载时将弹窗提示)</string>
+
+
+    <string name="privacy_config">隐私选项配置</string>
+    <string name="input_privacy_config">配置SDK隐私设置(都不选则都允许):</string>
+    <string name="klevinAdTest">自测工具</string>
+    <string name="add_clipboard_success">已复制到剪切板</string>
+
+    <string name="log">日志</string>
+    <string name="bottom_title">日志(单击清空)</string>
+
+    <string name="clear_cache">清理缓存</string>
+    <string name="clear_cache_success">缓存清理完毕</string>
+    <string name="clear_cache_fail">清理缓存失败</string>
+
+    <string-array name="ad_type">
+        <item>开屏广告</item>
+        <item>激励广告</item>
+        <item>插屏广告</item>
+        <item>自渲染广告</item>
+    </string-array>
+
+
+    <string name="load_splash">加载开屏(不自动展示)</string>
+    <string name="show_splash">展示开屏广告</string>
+    <string name="load_splash_auto">加载开屏(自动展示)</string>
+
+
+    <string name="input_reward_time">激励时长: </string>
+    <string name="input_reward_type">激励类型: </string>
+    <string name="sp_name_reward_config">rewardADConfig</string>
+    <string name="reward_time_default">-1</string>
+    <string name="reward_type_default">5</string>
+    <string name="load_encourage_ad">加载激励视频</string>
+    <string name="autoMute">静音</string>
+    <string name="play_online">边下边播</string>
+    <string name="show_ad_reward">展示激励视频</string>
+
+
+    <string name="show_ad_interstitial">展示插屏广告</string>
+    <string name="load_interstitial_ad">加载插屏广告</string>
+
+
+    <string-array name="native_type">
+        <item>自渲染广告测试</item>
+        <item>信息流效果展示</item>
+        <item>自渲染图片测试</item>
+    </string-array>
+    <string name="item_normal_view_idle_recycler">Recycler item %1$d</string>
+    <string name="item_video_view_title">广告标题</string>
+    <string name="item_video_view_desc">广告描述，一般就是对产品的特点、优势的简要阐述，一般展示两行比较合适。</string>
+    <string name="item_image_view_custom">自定义</string>
+    <string name="item_load_more">加载中…</string>
+    <string name="unified_recyclerview_load">加载</string>
+    <string name="unified_recyclerview_tips_success">请求成功</string>
+    <string name="unified_recyclerview_tips_illegal_amount">请输入不大于2的数</string>
+    <string name="add_native_ad">在下方插入广告信息</string>
+    <string name="mode1">模式1</string>
+    <string name="mode2">模式2</string>
+    <string name="auto_download_select_tips">视频自动下载条件：</string>
+    <string name="auto_play_select_tips">视频自动播放条件：</string>
+    <string name="register_select_tips">播放区点击注册类型：</string>
+    <string-array name="auto_download_policy">
+        <item>始终</item>
+        <item>仅WIFI</item>
+    </string-array>
+    <string-array name="auto_play_policy">
+        <item>仅WIFI</item>
+        <item>始终</item>
+        <item>从不</item>
+    </string-array>
+    <string-array name="register_type">
+        <item>默认，不注册</item>
+        <item>注册为详情内容控件</item>
+        <item>注册为点击控件</item>
+    </string-array>
+</resources>

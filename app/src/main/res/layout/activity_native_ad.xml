@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.tencent.klevinDemo.log.LogView
+            android:id="@+id/logView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline3"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <com.tencent.klevinDemo.view.AdCommonView
+            android:id="@+id/adCommonView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_vert7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_vert8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <TextView
+            android:id="@+id/txt_auto_download_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/auto_download_select_tips"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vert7"
+            app:layout_constraintTop_toBottomOf="@+id/adCommonView" />
+
+        <Spinner
+            android:id="@+id/spinner_auto_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/auto_download_policy"
+            app:layout_constraintStart_toEndOf="@+id/txt_auto_download_tips"
+            app:layout_constraintTop_toBottomOf="@+id/adCommonView" />
+
+        <TextView
+            android:id="@+id/txt_auto_play_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/auto_play_select_tips"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vert7"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_auto_download" />
+
+        <Spinner
+            android:id="@+id/spinner_auto_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/auto_play_policy"
+            app:layout_constraintStart_toEndOf="@+id/txt_auto_play_tips"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_auto_download" />
+
+        <TextView
+            android:id="@+id/txt_register_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_select_tips"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vert7"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_auto_play" />
+
+        <Spinner
+            android:id="@+id/spinner_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/register_type"
+            app:layout_constraintStart_toEndOf="@+id/txt_register_tips"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_auto_play" />
+
+        <Button
+            android:id="@+id/btn_add_native_ad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/add_native_ad"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vert8"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vert7"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_register" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintBottom_toTopOf="@+id/logView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_native_status"
+            app:layout_constraintVertical_bias="0.0">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/txt_native_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_vert8"
+            app:layout_constraintStart_toStartOf="@+id/guideline_vert7"
+            app:layout_constraintTop_toBottomOf="@+id/btn_add_native_ad" />
+
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>
